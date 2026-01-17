@@ -18,9 +18,16 @@
         border-radius: 41px;
         padding: 10px 24px;
         background-color: #E02C6D;
+        border: none;
         color: #FFFFFF;
+        font-weight: 700;
+        font-size: 1rem;
     }
 
+    .navbar, .banner{
+    max-width: 1440px;
+    margin: 0px auto;
+}
 
  /* ===== Header / Navbar =====  */
  .navbar{
@@ -43,7 +50,68 @@
     font-size: 1rem;
     color: var(--primary-color);
  }
-.navbar, .banner{
-    max-width: 1440px;
-    margin: 0px auto;
+
+/* ===== Hero / Banner =====*/
+.banner{
+    justify-content: space-between;
+    margin-top: 42px;
+    align-items: center;
+    justify-items: center;
+
+
+}
+.banner-content{
+    width: 582px;
+    height: 270px;
+    text-align: left;
+}
+.banner-title{
+    color: var(--primary-color);
+    font-size: 3.25rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+.banner-description{
+    color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.main-img{
+    padding: 30px 32px 30px 2px;
+    background-image: url(./images/Circle\ design.svg);
+}
+
+/* responsive layout */
+@media screen and (max-width: 576px){
+    .navbar{
+        flex-direction: column;
+    }
+    .menu{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        text-align: center;
+    }
+    .banner{
+        flex-direction: column-reverse;  
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-content, .banner-title{
+        text-align: center;
+        width: 100%;
+        font-size: 1.75rem;
+    } 
+    .banner-title{
+        line-height: 50px;
+    }
+    .banner-img{
+        width: 257px;
+        margin-left: -30px;
+    }
+    .main-img{      
+        width: 100%; 
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
 }
