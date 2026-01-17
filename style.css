@@ -24,7 +24,7 @@
         font-size: 1rem;
     }
 
-    .navbar, .banner{
+    .navbar, .banner, .main-container{
     max-width: 1440px;
     margin: 0px auto;
 }
@@ -79,7 +79,25 @@
 .main-img{
     padding: 30px 32px 30px 2px;
     background-image: url(./images/Circle\ design.svg);
+    margin-bottom: 70px;
 }
+
+/* sponsor section */
+hr{
+    width: 100%;
+    height: 1px;  
+}
+.sponsor-brand{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    align-items: center;
+}
+
+.sponsor-img{
+       margin-top: 36px;
+       margin-bottom: 36px;
+}
+
 
 /* responsive layout */
 @media screen and (max-width: 576px){
@@ -88,7 +106,7 @@
     }
     .menu{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 15px;
         text-align: center;
     }
@@ -96,6 +114,7 @@
         flex-direction: column-reverse;  
         justify-content: center;
         align-items: center;
+        margin-bottom: 51px;
     }
     .banner-content, .banner-title{
         text-align: center;
@@ -113,5 +132,19 @@
         width: 100%; 
         background-size: 100%;
         background-repeat: no-repeat;
+        margin-bottom: -20px;
+    }
+    .sponsor-brand{
+        grid-template-columns: repeat(4, 1fr);
+        padding-left: 42px;
+        padding-right: 42px;
+        gap: 31px;
+    }
+    .sponsor-img{
+        width: 100%;
+        margin-top: -36px;
+    }
+    hr{
+        visibility: hidden;
     }
 }
