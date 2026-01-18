@@ -160,6 +160,37 @@
         font-size: 1rem;
         
 }
+/* < collection/card section  */
+.featured{
+    margin-top: 100px;
+    gap: 96px;
+    /* justify-content: space-between; */
+    margin-bottom: 100px;
+
+}
+.featured-title{
+    font-size: 2.375rem;
+    width: 610px;
+    font-weight: 700;
+    color: rgba(10, 8, 38, 1);
+}
+.featured-description{
+    font-size: 1rem;
+    line-height: 28px;
+    width: 501px;
+    text-align: left;
+    font-weight: 700;
+    color: rgba(108, 108, 108, 1);
+}
+.btn3{
+    background-color: rgba(224, 44, 109, 1);
+        border: none;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 700;
+        font-size: 1rem;
+        padding: 10px 24px;
+
+}
 /* responsive layout */
 @media screen and (max-width: 576px){
     .navbar{
@@ -211,8 +242,20 @@
     .card-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    .button-2{
-        margin-right: 16px;
+    .featured{
+        flex-direction: column-reverse;
+        padding: 0 30px;
+        text-align: center;
     }
-    
+    .featured-img{
+        margin-top: -40px;
+    }
+    .featured-title{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .featured-description{
+        width: 100%;
+        text-align: center;
+    }
 }
