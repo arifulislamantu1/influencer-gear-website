@@ -292,3 +292,28 @@
         text-align: center;
     }
 }
+
+
+@media screen and (min-width: 576px) and (max-width:992px){
+    .navbar{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .sponsor-brand{
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: -50px;
+        margin-top: 70px;
+    }
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .featured{
+        flex-direction: column-reverse;
+    }
+    .featured-img{
+        width: 100%;
+    }
+}
